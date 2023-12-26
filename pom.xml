@@ -60,6 +60,23 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+
+            <!-- 设置程序入口，可以使用 mvn exec:java 命令来运行主程序 -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>test.TestMain</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
