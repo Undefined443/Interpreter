@@ -4,6 +4,8 @@
 
 源文件：
 
+heart.txt
+
 ```
 -- Arrow
 color is (255, 255, 0);
@@ -31,6 +33,14 @@ color is (255, 0, 0);
 rot is pi;
 scale is (8, 8);
 for t from 0 to 2*pi step pi/200 draw(16*(sin(t)**3), 13*cos(t)-5*cos(2*t)-2*cos(3*t)-cos(4*t));
+```
+
+编译运行：
+
+```sh
+mvn package  # 编译
+
+java -jar target/Interpreter-1.0.0-jar-with-dependencies.jar heart.txt  # 运行
 ```
 
 输出：
