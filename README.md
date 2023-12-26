@@ -35,7 +35,7 @@ scale is (8, 8);
 for t from 0 to 2*pi step pi/200 draw(16*(sin(t)**3), 13*cos(t)-5*cos(2*t)-2*cos(3*t)-cos(4*t));
 ```
 
-编译运行：
+编译运行（要求 Java 版本至少为 11）：
 
 ```sh
 mvn package  # 编译
