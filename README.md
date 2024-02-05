@@ -6,7 +6,7 @@
 
 heart.txt
 
-```
+```sql
 -- Arrow
 color is (255, 255, 0);
 
