@@ -7,7 +7,7 @@
 heart.txt
 
 ```sql
--- Arrow
+-- 箭头
 color is (255, 255, 0);
 
 scale is (1, 1);
