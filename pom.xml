@@ -6,7 +6,7 @@
 
     <groupId>Undefined443</groupId>
     <artifactId>Interpreter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <!-- 使用 Java 14 -->
     <properties>
