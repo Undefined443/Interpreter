@@ -2,9 +2,11 @@
 
 一款函数绘图语言解释器
 
+## 使用样例
+
 源文件：
 
-heart.txt
+`heart.txt`
 
 ```sql
 -- 箭头
@@ -35,7 +37,7 @@ scale is (8, 8);
 for t from 0 to 2*pi step pi/200 draw(16*(sin(t)**3), 13*cos(t)-5*cos(2*t)-2*cos(3*t)-cos(4*t));
 ```
 
-编译运行（要求 Java 版本至少为 11）：
+编译运行（要求 JDK 版本至少为 14）：
 
 ```sh
 # 编译
