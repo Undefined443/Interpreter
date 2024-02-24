@@ -6,7 +6,7 @@
 
     <groupId>Undefined443</groupId>
     <artifactId>Interpreter</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <!-- 使用 Java 14 -->
     <properties>
@@ -15,6 +15,47 @@
 
     <build>
         <plugins>
+            <!-- 配置程序入口 -->
+            <plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+                    <!-- 测试主程序 -->
+                    <!-- mvn exec:java@run-Main -->
+					<execution>
+						<id>run-Main</id>
+						<configuration>
+							<mainClass>test.TestMain</mainClass>
+						</configuration>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+                    <!-- 测试 Lexer -->
+                    <!-- mvn exec:java@run-Lexer -->
+					<execution>
+						<id>run-Lexer</id>
+						<configuration>
+							<mainClass>test.TestLexer</mainClass>
+						</configuration>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+                    <!-- 测试 Parser -->
+                    <!-- mvn exec:java@run-Parser -->
+					<execution>
+						<id>run-Parser</id>
+						<configuration>
+							<mainClass>test.TestParser</mainClass>
+						</configuration>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
