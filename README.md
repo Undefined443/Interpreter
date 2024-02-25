@@ -48,7 +48,7 @@ mvn package  # 要求 JDK 版本最低为 14
 #### 运行主程序
 
 ```sh
-java -jar target/Interpreter-1.0.1-jar-with-dependencies.jar heart.txt
+java -jar target/Interpreter-1.0.2-jar-with-dependencies.jar heart.txt
 ```
 
 输出：
@@ -58,7 +58,7 @@ java -jar target/Interpreter-1.0.1-jar-with-dependencies.jar heart.txt
 #### 测试词法分析器
 
 ```sh
-java -cp target/Interpreter-1.0.1-jar-with-dependencies.jar test.TestLexer heart.txt
+java -cp target/Interpreter-1.0.2-jar-with-dependencies.jar test.TestLexer heart.txt
 ```
 
 输出：
@@ -294,7 +294,7 @@ java -cp target/Interpreter-1.0.1-jar-with-dependencies.jar test.TestLexer heart
 #### 测试语法分析器
 
 ```sh
-java -cp target/Interpreter-1.0.1-jar-with-dependencies.jar test.TestParser heart.txt
+java -cp target/Interpreter-1.0.2-jar-with-dependencies.jar test.TestParser heart.txt
 ```
 
 输出：
